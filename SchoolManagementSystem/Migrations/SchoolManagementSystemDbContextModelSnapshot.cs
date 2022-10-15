@@ -98,86 +98,6 @@ namespace SchoolManagementSystem.Migrations
                         new
                         {
                             GenderId = 3,
-                            GenderName = "Agender"
-                        },
-                        new
-                        {
-                            GenderId = 4,
-                            GenderName = "Transsexual"
-                        },
-                        new
-                        {
-                            GenderId = 5,
-                            GenderName = "Intersex"
-                        },
-                        new
-                        {
-                            GenderId = 6,
-                            GenderName = "Non-Conforming"
-                        },
-                        new
-                        {
-                            GenderId = 7,
-                            GenderName = "Bigender"
-                        },
-                        new
-                        {
-                            GenderId = 8,
-                            GenderName = "Butch"
-                        },
-                        new
-                        {
-                            GenderId = 9,
-                            GenderName = "Cisgender"
-                        },
-                        new
-                        {
-                            GenderId = 10,
-                            GenderName = "Gender expansive"
-                        },
-                        new
-                        {
-                            GenderId = 11,
-                            GenderName = "Genderfluid"
-                        },
-                        new
-                        {
-                            GenderId = 12,
-                            GenderName = "Gender Outlaw"
-                        },
-                        new
-                        {
-                            GenderId = 13,
-                            GenderName = "Genderqueer"
-                        },
-                        new
-                        {
-                            GenderId = 14,
-                            GenderName = "Masculine of center"
-                        },
-                        new
-                        {
-                            GenderId = 15,
-                            GenderName = "Nonbinary"
-                        },
-                        new
-                        {
-                            GenderId = 16,
-                            GenderName = "Omnigender"
-                        },
-                        new
-                        {
-                            GenderId = 17,
-                            GenderName = "Polygender"
-                        },
-                        new
-                        {
-                            GenderId = 18,
-                            GenderName = "Two Spirit"
-                        },
-                        new
-                        {
-                            GenderId = 19,
                             GenderName = "Couldn't find"
                         });
                 });
@@ -243,7 +163,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1960, 10, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Huna",
-                            GenderId = 5,
+                            GenderId = 2,
                             Lastname = "Deanna2",
                             StudentId = 2
                         },
@@ -253,7 +173,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1964, 7, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Beina",
-                            GenderId = 7,
+                            GenderId = 2,
                             Lastname = "Deanna3",
                             StudentId = 3
                         },
@@ -263,7 +183,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1966, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Layna",
-                            GenderId = 10,
+                            GenderId = 2,
                             Lastname = "Deanna4",
                             StudentId = 4
                         },
@@ -273,7 +193,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1968, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Abuen",
-                            GenderId = 4,
+                            GenderId = 1,
                             Lastname = "Deanna5",
                             StudentId = 5
                         },
@@ -283,7 +203,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1970, 7, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Linu",
-                            GenderId = 2,
+                            GenderId = 1,
                             Lastname = "Deanna6",
                             StudentId = 6
                         },
@@ -293,7 +213,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1971, 8, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Ohan",
-                            GenderId = 3,
+                            GenderId = 2,
                             Lastname = "Deanna7",
                             StudentId = 7
                         },
@@ -303,7 +223,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1959, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Michele",
-                            GenderId = 4,
+                            GenderId = 2,
                             Lastname = "Deanna8",
                             StudentId = 8
                         },
@@ -313,7 +233,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1957, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Larn",
-                            GenderId = 8,
+                            GenderId = 1,
                             Lastname = "Deanna9",
                             StudentId = 9
                         },
@@ -323,7 +243,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1980, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Cubert",
-                            GenderId = 9,
+                            GenderId = 1,
                             Lastname = "Deanna10",
                             StudentId = 10
                         },
@@ -333,7 +253,7 @@ namespace SchoolManagementSystem.Migrations
                             Address = "Deneme sokağı 14",
                             DOB = new DateTime(1978, 4, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FirstandSecondName = "Augna Ignis",
-                            GenderId = 10,
+                            GenderId = 1,
                             Lastname = "Deanna11",
                             StudentId = 11
                         });
@@ -434,7 +354,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -447,7 +367,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -460,7 +380,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -473,7 +393,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -486,7 +406,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -499,7 +419,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -512,7 +432,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -525,7 +445,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 3,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -538,7 +458,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 3,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -551,7 +471,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -564,7 +484,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -577,7 +497,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -590,7 +510,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 4,
+                            GenderId = 3,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
                             PhoneNumber = "0543-432-12-45"
@@ -655,7 +575,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 1,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -668,7 +588,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 2,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -681,7 +601,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 1,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -694,7 +614,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 2,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -707,7 +627,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 1,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -720,7 +640,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 2,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -733,7 +653,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 1,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
@@ -746,7 +666,7 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(1986, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Leilahunclock@gmail.com",
                             FirstandSecondName = "Leila Hun",
-                            GenderId = 5,
+                            GenderId = 1,
                             JoinDate = new DateTime(2006, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Clock",
                             PhoneNumber = "0543-234-12-45"
