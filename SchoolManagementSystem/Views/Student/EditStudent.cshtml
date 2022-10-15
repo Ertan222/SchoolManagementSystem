@@ -1,0 +1,89 @@
+﻿@model StudentViewModel
+@{
+    ViewData["Title"] = "EditStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<form asp-controller="Student" asp-action="EditStudent" asp-route-id="@Model.Student.HumanId" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-12">
+            <h5 class="form-title"><span>Edit Student</span></h5>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Student Full Name</label>
+                <input type="text" name="FirstandSecondName" class="form-control" value="@Model.Student.FirstandSecondName">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="Lastname" value="@Model.Student.Lastname" class="form-control">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Class</label>
+                <select class="form-control" name="ClasssId">
+                    <option selected value="0">Select Class</option>
+                    @foreach (Classs classs in Model.ClasssList)
+                    {
+                        <option selected="@(classs.ClasssId == Model.Student.ClasssId)" value="@classs.ClasssId">@classs.ClasssName</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control" name="GenderId">
+                    <option selected value="0">Select Gender</option>
+                    @foreach (Gender gender in Model.GenderList)
+                    {
+                        <option selected="@(gender.GenderId == Model.Student.GenderId)" value="@gender.GenderId">@gender.GenderName</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" name="DOB" class="form-control" value="@(Model.Student.DOB.Year !=1?Model.Student.DOB.ToString("yyyy-MM-dd"):"")">
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="Email" value="@Model.Student.Email" class="form-control">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="PhoneNumber" value="@Model.Student.PhoneNumber" class="form-control">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Address</label>
+                <textarea name="Address" cols="10" rows="10" style="resize:none; margin:auto;">@Model.Student.Address</textarea>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Join Date</label>
+                <input type="date" name="JoinDate" class="form-control" value="@(Model.Student.JoinDate.Year !=1?Model.Student.JoinDate.ToString("yyyy-MM-dd"):"")">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+    </div>
+</form>
+
+

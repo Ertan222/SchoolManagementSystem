@@ -1,0 +1,57 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "GetStudentInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="about-info">
+    <div class="media mt-3">
+        <img class="avatar-img" src=~/studentİmage/teen-4.png alt="Student Image">
+        <div class="media-body">
+            <ul>
+                <li>
+                    <span class="title-span">Full Name : </span>
+                    <span class="info-span">@Model.FirstandSecondName</span>
+                </li>
+                <li>
+                    <span class="title-span">Last Name : </span>
+                    <span class="info-span">@Model.Lastname</span>
+                </li>
+                <li>
+                    <span class="title-span">Class : </span>
+                    <span class="info-span">@Model.Classs.ClasssName</span>
+                </li>
+                <li>
+                    <span class="title-span">Phone Number: </span>
+                    <span class="info-span">@Model.PhoneNumber</span>
+                </li>
+                <li>
+                    <span class="title-span">Email : </span>
+                    <span class="info-span"> @Model.Email </span>
+                </li>
+                <li>
+                    <span class="title-span">Gender : </span>
+                    <span class="info-span">@Model.Gender.GenderName</span>
+                </li>
+                <li>
+                    <span class="title-span">DOB : </span>
+                    <span class="info-span">@Model.DOB</span>
+                </li>
+                <li>
+                    <span class="title-span">Join Date: </span>
+                    <span class="info-span">@Model.JoinDate</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <h5>Address</h5>
+            <p>@Model.Address</p>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,96 @@
+﻿@model Userr
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from preschool.dreamguystech.com/html-template/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:58 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Fire Vision - Register</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap">
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="main-wrapper login-body">
+        <div class="login-wrapper">
+            <div class="container">
+                <div class="loginbox">
+                    <div class="login-left">
+                        <img class="img-fluid" src="~/html-template/Logo/Screenshot_159TP.png" alt="Logo">
+                    </div>
+                    <div class="login-right">
+                        <div class="login-right-wrap">
+                            <h1>Register</h1>
+                            <form asp-controller="Account" asp-action="Register" method="post" >
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="Emaill" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="Passwordd" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="PassworddRepeatt" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="AcceptButton" type="checkbox">
+                                    <label class="form-check-label" for="notify">I read, accept.</label>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="submit" class="btn btn-primary btn-block" id="RegisterButton" value="Login" disabled>
+                                </div>
+                            </form>
+                            <div class="login-or">
+                                <span class="or-line"></span>
+                                <span class="span-or">or</span>
+                            </div>
+                            <div class="text-center dont-have">Already have an account? <a asp-controller="Account" asp-action="Login">Login</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        var checker = document.getElementById('AcceptButton');
+        var sendbtn = document.getElementById('RegisterButton');
+        checker.onchange = function () {
+            if (checker.checked) {
+                sendbtn.disabled = false;
+            }
+            else {
+                sendbtn.disabled = true;
+            }
+
+
+        };
+
+    </script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from preschool.dreamguystech.com/html-template/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:58 GMT -->
+</html>

@@ -1,0 +1,53 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "DeleteStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-controller="Student" asp-action="RealDeleteStudent" asp-route-id="@Model.HumanId" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-12">
+            <h5 class="form-title"><span>Student Information</span></h5>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Student Full Name: @Model.FirstandSecondName</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Student Lastname: @Model.Lastname</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Gender:@Model.Gender</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Class:@Model.Classs</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Email:@Model.Email</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Join Date:@Model.JoinDate.ToShortDateString()</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Phone Number:@Model.PhoneNumber</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </div>
+    </div>
+</form>
+
