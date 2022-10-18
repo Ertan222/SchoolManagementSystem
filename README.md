@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿Technologies ı am using()
+=======
+Technologies ı am using()
+>>>>>>> 334e92c8e0850ed3356173b636f7561aeec6c425
 {
 ASP.NET CORE MVC(.net6.0,C#10)
 EF Core(Code First, EF core extensions(tools,design,sqlserver)),
@@ -33,7 +37,15 @@ Added teacher crud operations and begin to authentication(cookie based)
 ![Teachet Edit](https://user-images.githubusercontent.com/62712555/195994031-d0cc361d-e535-4632-af44-55456e6df2ea.png)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 334e92c8e0850ed3356173b636f7561aeec6c425
 # Day 5
 Genders and Role based sidebar added.
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 334e92c8e0850ed3356173b636f7561aeec6c425
