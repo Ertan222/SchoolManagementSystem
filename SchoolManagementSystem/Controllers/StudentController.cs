@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolManagementSystem.Data;
 using SchoolManagementSystem.Models;
 using SchoolManagementSystem.ViewModel;
+using System.Security.Cryptography;
 
 namespace SchoolManagementSystem.Controllers
 {
@@ -54,14 +55,13 @@ namespace SchoolManagementSystem.Controllers
 
         public async Task<IActionResult> GetStudentInfo(int id)
         {
-            Student selectedInfoStudent = await _context.Students.Include(a => a.Gender).Include(a => a.Classs).FirstOrDefaultAsync(a => a.HumanId == id);
-            
-            if (selectedInfoStudent == null)
+             Student selectedStudent = await _context.Students.Include(a => a.Gender).Include(a => a.Classs).FirstOrDefaultAsync(a => a.HumanId == id);
+            if (selectedStudent == null)
             {
                 return View("NotFound");
                  
             }
-            return View(selectedInfoStudent);
+            return View(selectedStudent);
         }
 
 
@@ -125,6 +125,36 @@ namespace SchoolManagementSystem.Controllers
             return View(studentViewModel);
 
         }
+
+        [Authorize(Roles ="Teacher")]
+        [HttpPost]
+        public async Task<IActionResult> AddMark(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                string teacherEmail = (User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Email).Value.ToString());
+                Markk markk = new Markk { HumanId = id, AddedTime = DateTime.Now , Emaill = teacherEmail};
+                await _context.Markks.AddAsync(markk);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("GetStudentInfo", "Student", new { id = id });
+            }
+            return RedirectToAction("GetStudentInfo", "Student", new { id = id });
+        }
+
+        [Authorize(Roles ="Teacher")]
+        [HttpPost]
+        public async Task<IActionResult> RemoveMark(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                Markk studentMark =  await _context.Markks.FirstOrDefaultAsync(x=>x.HumanId == id);
+                _context.Markks.Remove(studentMark);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("GetStudentInfo", "Student", new { id = id });
+            }
+            return RedirectToAction("GetStudentInfo", "Student", new { id = id });
+        }   
+
 
     }
 }

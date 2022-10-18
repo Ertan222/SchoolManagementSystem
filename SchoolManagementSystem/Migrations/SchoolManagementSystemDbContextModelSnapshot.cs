@@ -182,6 +182,29 @@ namespace SchoolManagementSystem.Migrations
                         });
                 });
 
+            modelBuilder.Entity("SchoolManagementSystem.Models.Markk", b =>
+                {
+                    b.Property<int>("MarkID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MarkID"), 1L, 1);
+
+                    b.Property<DateTime>("AddedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Emaill")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HumanId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MarkID");
+
+                    b.ToTable("Markks");
+                });
+
             modelBuilder.Entity("SchoolManagementSystem.Models.Parentt", b =>
                 {
                     b.Property<int>("HumanId")
@@ -440,7 +463,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -454,7 +477,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -468,7 +491,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 4,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -482,7 +505,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 3,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -496,7 +519,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -510,7 +533,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -524,7 +547,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -538,7 +561,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 6,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -552,7 +575,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 9,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -566,7 +589,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 7,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -580,7 +603,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 10,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -594,7 +617,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 8,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -608,7 +631,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
-                            Marks = 1,
+                            Marks = 0,
                             PhoneNumber = "0543-432-12-45"
                         });
                 });
