@@ -17,7 +17,7 @@
         <div class="header">
             <div class="header-left">
                 <a href="index.html" class="logo">
-                    <img src="~/html-template/Logo/Screenshot_159.png" alt="Logo">
+                    <img src="~/html-template/Logo/Screenshot_159TP.png" alt="Logo">
                 </a>
                 <a href="index.html" class="logo logo-small">
                     <img src="~/html-template/assets/img/homepagelogo.png" alt="Logo" width="30" height="30">
@@ -100,26 +100,37 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown has-arrow">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                        <span class="user-img"><img class="rounded-circle" src="~/html-template/assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
-                    </a>
-                    <div class="dropdown-menu">
-                        <div class="user-header">
-                            <div class="form-group mb-0">
-                                <input type="submit" class="btn btn-primary btn-block" id="RegisterButton" value="Login" disabled>
+                @if (@User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Email) != null)
+                {
+                    <li class="nav-item dropdown has-arrow">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <span class="user-img"><img class="rounded-circle" src="~/html-template/assets/img/profiles/avatar-01.jpg" width="31" alt="User"></span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="user-header">
+                                <div class="user-text">
+                                </div>
                             </div>
-                            
-                            <div class="user-text">
-                                <h6>Ryan Taylor</h6>
-                                <p class="text-muted mb-0">Administrator</p>
-                            </div>
+                            <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
                         </div>
-                        <a class="dropdown-item" href="profile.html">My Profile</a>
-                        <a class="dropdown-item" href="inbox.html">Inbox</a>
-                        <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
-                    </div>
-                </li>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item dropdown has-arrow">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <span class="user-img"><img class="rounded-circle" src="~/AvatarImages/Anonymous.png" width="31" alt="User"></span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="user-header">
+                                <div class="user-text">
+                                </div>
+                            </div>
+                            <a class="dropdown-item" asp-controller="Account" asp-action="Login">Login</a>
+                            <a class="dropdown-item" asp-controller="Account" asp-action="Register">Register</a>
+                        </div>
+                    </li>
+                }
             </ul>
         </div>
         <div class="sidebar" id="sidebar">
@@ -130,15 +141,37 @@
                             <span>Main Menu</span>
                         </li>
                         <li class="submenu">
-                            <a><i class="fas fa-user-graduate"></i> <span> Students</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a asp-controller="Student" asp-action="GetAllStudents">Student List</a></li>
-                            </ul>
-                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a asp-controller="Teacher" asp-action="GetAllTeachers">Teacher List</a></li>
-                            </ul>
+                            @if (@User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Role)?.Value.ToString() == "Admin")
+                            {
+                                <a><i class="fas fa-user-graduate"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a asp-controller="Student" asp-action="GetAllStudents">Student List</a></li>
+                                </ul>
+
+
+                                <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a asp-controller="Teacher" asp-action="GetAllTeachers">Teacher List</a></li>
+                                </ul>
+                            }
+                            else if (@User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Role)?.Value.ToString() == "Teacher")
+                            {
+                                <a><i class="fas fa-user-graduate"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a asp-controller="Student" asp-action="GetAllStudents">Student List</a></li>
+                                </ul>
+
+                            }
+                            else if (@User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Role)?.Value.ToString() == "Student")
+                            {
+                                <a><i class="fas fa-user-graduate"></i> <span> Information</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a asp-controller="Student" asp-action="GetStudentInfo">My Profile</a></li>
+                                </ul>
+
+                            }
                             
+
                         </li>
                     </ul>
                 </div>

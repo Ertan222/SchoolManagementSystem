@@ -24,7 +24,23 @@ namespace SchoolManagementSystem.Data
 
                                                      new Gender { GenderId = 1, GenderName = "Male" },
                                                      new Gender { GenderId = 2, GenderName = "Female" },
-                                                     new Gender { GenderId = 3, GenderName = "Couldn't find" }
+                                                     new Gender { GenderId = 3, GenderName = "Couldn't find" }, 
+                                                     new Gender { GenderId = 19, GenderName = "Agender" },
+                                                     new Gender { GenderId = 4, GenderName = "Transsexual" },
+                                                     new Gender { GenderId = 5, GenderName = "Intersex" },
+                                                     new Gender { GenderId = 6, GenderName = "Non-Conforming" },
+                                                     new Gender { GenderId = 7, GenderName = "Bigender" },
+                                                     new Gender { GenderId = 8, GenderName = "Butch" },
+                                                     new Gender { GenderId = 9, GenderName = "Cisgender" },
+                                                     new Gender { GenderId = 10, GenderName = "Gender expansive" },
+                                                     new Gender { GenderId = 11, GenderName = "Genderfluid" },
+                                                     new Gender { GenderId = 12, GenderName = "Gender Outlaw" },
+                                                     new Gender { GenderId = 13, GenderName = "Genderqueer" },
+                                                     new Gender { GenderId = 14, GenderName = "Masculine of center" },
+                                                     new Gender { GenderId = 15, GenderName = "Nonbinary" },
+                                                     new Gender { GenderId = 16, GenderName = "Omnigender" },
+                                                     new Gender { GenderId = 17, GenderName = "Polygender" },
+                                                     new Gender { GenderId = 18, GenderName = "Two Spirit" }
 
 
                                                     );
@@ -43,19 +59,19 @@ namespace SchoolManagementSystem.Data
 
             modelBuilder.Entity<Student>().HasData(
 
-                                                     new Student { HumanId = 1, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 2, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 1, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 3, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 4, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 1, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 5, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 6, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 1, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 7, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 8, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 3, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 9, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 3, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 10, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 11, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 1, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 12, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") },
-                                                     new Student { HumanId = 13, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 3, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") }
+                                                     new Student { HumanId = 1, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") ,Marks=1},
+                                                     new Student { HumanId = 2, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 1, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016"), Marks = 1 },
+                                                     new Student { HumanId = 3, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 4, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 4, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 3, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 5, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 2, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 6, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 5, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 7, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 5, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 8, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 6, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 9, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 9, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 10, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 7, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 11, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 10, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 12, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 8, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 },
+                                                     new Student { HumanId = 13, FirstandSecondName = "Maryse Deanna", Lastname = "Hoedemaeker", DOB = Convert.ToDateTime("6/12/2001"), ClasssId = 1, Email = "marysedenna@gmail.com", PhoneNumber = "0543-432-12-45", GenderId = 5, Address = "Deneme sokağı 14", JoinDate = Convert.ToDateTime("6/10/2016") , Marks = 1 }
 
 
 
@@ -92,17 +108,17 @@ namespace SchoolManagementSystem.Data
             modelBuilder.Entity<Rolee>().HasData(
 
               new Rolee { RoleeID = 1, RoleeName = "Candidate" },
-              new Rolee { RoleeID = 2, RoleeName = "User" },
-              new Rolee { RoleeID = 3, RoleeName = "Admin" },
-              new Rolee { RoleeID = 4, RoleeName = "Supervisor" }
+              new Rolee { RoleeID = 2, RoleeName = "Student" },
+              new Rolee { RoleeID = 3, RoleeName = "Teacher" },
+              new Rolee { RoleeID = 4, RoleeName = "Admin" }
               );
 
             modelBuilder.Entity<Userr>().HasData(
 
                 new Userr { UserrID = 1, Emaill = "candidate@hotmail.com", Passwordd = "123456", RoleeID = 1 },
-                new Userr { UserrID = 2, Emaill = "user@hotmail.com", Passwordd = "123456", RoleeID = 2 },
-                new Userr { UserrID = 3, Emaill = "admin@hotmail.com", Passwordd = "123456", RoleeID = 3 },
-                new Userr { UserrID = 4, Emaill = "supervisor@hotmail.com", Passwordd = "123456", RoleeID = 4 },
+                new Userr { UserrID = 2, Emaill = "student@hotmail.com", Passwordd = "123456", RoleeID = 2 },
+                new Userr { UserrID = 3, Emaill = "teacher@hotmail.com", Passwordd = "123456", RoleeID = 3 },
+                new Userr { UserrID = 4, Emaill = "admin@hotmail.com", Passwordd = "123456", RoleeID = 4 },
                 new Userr { UserrID = 5, Emaill = "user2@hotmail.com", Passwordd = "123456", RoleeID = 2 }
                 );
 

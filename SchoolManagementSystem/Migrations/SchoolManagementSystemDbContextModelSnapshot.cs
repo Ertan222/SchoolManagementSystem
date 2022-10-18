@@ -99,6 +99,86 @@ namespace SchoolManagementSystem.Migrations
                         {
                             GenderId = 3,
                             GenderName = "Couldn't find"
+                        },
+                        new
+                        {
+                            GenderId = 19,
+                            GenderName = "Agender"
+                        },
+                        new
+                        {
+                            GenderId = 4,
+                            GenderName = "Transsexual"
+                        },
+                        new
+                        {
+                            GenderId = 5,
+                            GenderName = "Intersex"
+                        },
+                        new
+                        {
+                            GenderId = 6,
+                            GenderName = "Non-Conforming"
+                        },
+                        new
+                        {
+                            GenderId = 7,
+                            GenderName = "Bigender"
+                        },
+                        new
+                        {
+                            GenderId = 8,
+                            GenderName = "Butch"
+                        },
+                        new
+                        {
+                            GenderId = 9,
+                            GenderName = "Cisgender"
+                        },
+                        new
+                        {
+                            GenderId = 10,
+                            GenderName = "Gender expansive"
+                        },
+                        new
+                        {
+                            GenderId = 11,
+                            GenderName = "Genderfluid"
+                        },
+                        new
+                        {
+                            GenderId = 12,
+                            GenderName = "Gender Outlaw"
+                        },
+                        new
+                        {
+                            GenderId = 13,
+                            GenderName = "Genderqueer"
+                        },
+                        new
+                        {
+                            GenderId = 14,
+                            GenderName = "Masculine of center"
+                        },
+                        new
+                        {
+                            GenderId = 15,
+                            GenderName = "Nonbinary"
+                        },
+                        new
+                        {
+                            GenderId = 16,
+                            GenderName = "Omnigender"
+                        },
+                        new
+                        {
+                            GenderId = 17,
+                            GenderName = "Polygender"
+                        },
+                        new
+                        {
+                            GenderId = 18,
+                            GenderName = "Two Spirit"
                         });
                 });
 
@@ -282,17 +362,17 @@ namespace SchoolManagementSystem.Migrations
                         new
                         {
                             RoleeID = (byte)2,
-                            RoleeName = "User"
+                            RoleeName = "Student"
                         },
                         new
                         {
                             RoleeID = (byte)3,
-                            RoleeName = "Admin"
+                            RoleeName = "Teacher"
                         },
                         new
                         {
                             RoleeID = (byte)4,
-                            RoleeName = "Supervisor"
+                            RoleeName = "Admin"
                         });
                 });
 
@@ -334,6 +414,9 @@ namespace SchoolManagementSystem.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<int>("Marks")
+                        .HasColumnType("int");
+
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
@@ -357,6 +440,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -370,6 +454,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 1,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -380,9 +465,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 2,
+                            GenderId = 4,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -393,9 +479,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 1,
+                            GenderId = 3,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -409,6 +496,7 @@ namespace SchoolManagementSystem.Migrations
                             GenderId = 2,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -419,9 +507,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 1,
+                            GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -432,9 +521,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 2,
+                            GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -445,9 +535,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 3,
+                            GenderId = 6,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -458,9 +549,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 3,
+                            GenderId = 9,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -471,9 +563,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 2,
+                            GenderId = 7,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -484,9 +577,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 1,
+                            GenderId = 10,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -497,9 +591,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 2,
+                            GenderId = 8,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         },
                         new
@@ -510,9 +605,10 @@ namespace SchoolManagementSystem.Migrations
                             DOB = new DateTime(2001, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "marysedenna@gmail.com",
                             FirstandSecondName = "Maryse Deanna",
-                            GenderId = 3,
+                            GenderId = 5,
                             JoinDate = new DateTime(2016, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lastname = "Hoedemaeker",
+                            Marks = 1,
                             PhoneNumber = "0543-432-12-45"
                         });
                 });
@@ -711,21 +807,21 @@ namespace SchoolManagementSystem.Migrations
                         new
                         {
                             UserrID = 2,
-                            Emaill = "user@hotmail.com",
+                            Emaill = "student@hotmail.com",
                             Passwordd = "123456",
                             RoleeID = (byte)2
                         },
                         new
                         {
                             UserrID = 3,
-                            Emaill = "admin@hotmail.com",
+                            Emaill = "teacher@hotmail.com",
                             Passwordd = "123456",
                             RoleeID = (byte)3
                         },
                         new
                         {
                             UserrID = 4,
-                            Emaill = "supervisor@hotmail.com",
+                            Emaill = "admin@hotmail.com",
                             Passwordd = "123456",
                             RoleeID = (byte)4
                         },

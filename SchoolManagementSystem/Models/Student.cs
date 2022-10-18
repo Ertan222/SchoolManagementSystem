@@ -21,6 +21,7 @@ namespace SchoolManagementSystem.Models
         [DataType(DataType.Date, ErrorMessage = "Date is not in corect form")]
         public DateTime DOB { get; set; }
         [Required(ErrorMessage = "{0} must be filled."), Display(Name = "Gender"), Range(1, 99, ErrorMessage = "{0} must be chosen")]
+        public int Marks { get; set; }
         public int GenderId { get; set; }
         public Gender Gender { get; set; }
 

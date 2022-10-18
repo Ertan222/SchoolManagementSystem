@@ -6,7 +6,7 @@ using SchoolManagementSystem.Models;
 using SchoolManagementSystem.ViewModel;
 
 namespace SchoolManagementSystem.Controllers;
-[Authorize(Roles = "Admin,Supervisor")]
+[Authorize(Roles = "Admin")]
 public class TeacherController : Controller
 {
 
@@ -54,6 +54,11 @@ public class TeacherController : Controller
     public async Task<IActionResult> GetTeacherInfo(int id)
     {
         Teacher selectedInfoTeacher = await _context.Teachers.Include(a => a.Gender).Include(a => a.Classs).FirstOrDefaultAsync(a => a.HumanId == id);
+
+        if (selectedInfoTeacher == null)
+        {
+            return View("NotFound");
+        }
         return View(selectedInfoTeacher);
     }
 
@@ -63,7 +68,7 @@ public class TeacherController : Controller
 
         if (deleteTeacher == null)
         {
-            return NotFound();
+            return View("NotFound");
         }
 
         return View(deleteTeacher);
@@ -91,7 +96,7 @@ public class TeacherController : Controller
 
         if (teacherViewModel == null)
         {
-            return NotFound();
+            return View("NotFound");
         }
         return View(teacherViewModel);
 

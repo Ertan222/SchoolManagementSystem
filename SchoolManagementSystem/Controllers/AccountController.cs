@@ -55,6 +55,7 @@ namespace SchoolManagementSystem.Controllers
                             new Claim(ClaimTypes.Sid,userrr.UserrID.ToString()),
                             new Claim(ClaimTypes.Email,userrr.Emaill),
                             new Claim(ClaimTypes.Role,userrr.Rolee.RoleeName),
+
                         }, CookieAuthenticationDefaults.AuthenticationScheme
                 );
 
@@ -85,12 +86,12 @@ namespace SchoolManagementSystem.Controllers
                     {
                         return RedirectToAction("", "");
                     }
-                    else if (userrr.Rolee.RoleeName == "Admin")
+                    else if (userrr.Rolee.RoleeName == "Teacher")
                     {
-                        return Redirect("~/AdminHomePage/Index");
+                        return Redirect("~/Home/Index");
                     }
 
-                    else if (userrr.Rolee.RoleeName == "Supervisor")
+                    else if (userrr.Rolee.RoleeName == "Admin")
                     {
                         return Redirect("~/AdminHomePage/Index");
                     }

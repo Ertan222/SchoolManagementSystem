@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VfXkoXVttVWWw++ieFxF1qBaIixdqd6yWpj1jLaQVtg=",
+  "Hash": "9k5F+f76RcTSw0MP/4pl0yjsiijLMoEDDIpSVtSJP/M=",
   "Source": "SchoolManagementSystem",
   "BasePath": "_content/SchoolManagementSystem",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Ertan\\Source\\Repos\\SchoolManagementSystem\\SchoolManagementSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SchoolManagementSystem.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ertan\\Source\\Repos\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\AvatarImages\\Anonymous.png",
+      "SourceId": "SchoolManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ertan\\Source\\Repos\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\",
+      "BasePath": "_content/SchoolManagementSystem",
+      "RelativePath": "AvatarImages/Anonymous.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AvatarImages\\Anonymous.png"
     },
     {
       "Identity": "C:\\Users\\Ertan\\Source\\Repos\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\css\\site.css",
