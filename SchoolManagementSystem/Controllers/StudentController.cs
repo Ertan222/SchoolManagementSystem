@@ -18,6 +18,7 @@ namespace SchoolManagementSystem.Controllers
             _context = context;
         }
 
+
         public async Task<IActionResult> GetAllStudents()
         {
             List<Student> allStudents = await _context.Students.Include(a => a.Classs).Include(a => a.Gender).ToListAsync();

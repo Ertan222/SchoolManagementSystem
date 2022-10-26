@@ -11,6 +11,7 @@ namespace SchoolManagementSystem.Data
 
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Parentt> Parentts { get; set; }
         public DbSet<Classs> Classses { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Markk> Markks { get; set; }
