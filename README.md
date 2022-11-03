@@ -37,7 +37,7 @@ Added teacher crud operations and begin to authentication(cookie based)
 ![Teachet Edit](https://user-images.githubusercontent.com/62712555/195994031-d0cc361d-e535-4632-af44-55456e6df2ea.png)
 
 # Day 5
-Genders and Role based sidebar added.
+More genders and Role based sidebar added.
 
 
 # Teacher:
