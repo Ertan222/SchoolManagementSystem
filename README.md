@@ -48,5 +48,6 @@ Genders and Role based sidebar added.
 
 # Day 6
 Marks added (Role based for teachers)
+
 ![MarkAdded jpg](https://user-images.githubusercontent.com/62712555/199779613-f67263d2-8962-4648-b6aa-c8cbd8ce0258.png)
 
