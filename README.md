@@ -38,3 +38,15 @@ Added teacher crud operations and begin to authentication(cookie based)
 
 # Day 5
 Genders and Role based sidebar added.
+
+# Teacher:
+![TeacherSidebar](https://user-images.githubusercontent.com/62712555/199780343-5829de1e-c67b-4734-a560-34fe06cc1e70.png)
+
+# Admin: 
+![Screenshot_2](https://user-images.githubusercontent.com/62712555/199780320-e26cf80f-19c3-40c7-b2a2-383fcde00873.png)
+
+
+# Day 6
+Marks added (Role based for teachers)
+![MarkAdded jpg](https://user-images.githubusercontent.com/62712555/199779613-f67263d2-8962-4648-b6aa-c8cbd8ce0258.png)
+
